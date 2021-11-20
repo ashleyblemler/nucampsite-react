@@ -1,5 +1,12 @@
 import React from "react";
-import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from "reactstrap";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  Card,
+  CardBody,
+  CardHeader,
+  Media,
+} from "reactstrap";
 import { Link } from "react-router-dom";
 
 function About(props) {
@@ -29,8 +36,13 @@ function About(props) {
         <div className="col-sm-6">
           <h3>Our Mission</h3>
           <p>
-            We present a curated database of the best campsites in the vast woods and backcountry of the World Wide Web Wilderness. We increase access to adventure for the public while promoting safe and respectful use of resources. The expert
-            wilderness trekkers on our staff personally verify each campsite to make sure that they are up to our standards. We also present a platform for campers to share reviews on campsites they have visited with each other.
+            We present a curated database of the best campsites in the vast
+            woods and backcountry of the World Wide Web Wilderness. We increase
+            access to adventure for the public while promoting safe and
+            respectful use of resources. The expert wilderness trekkers on our
+            staff personally verify each campsite to make sure that they are up
+            to our standards. We also present a platform for campers to share
+            reviews on campsites they have visited with each other.
           </p>
         </div>
         <div className="col-sm-6">
@@ -56,9 +68,15 @@ function About(props) {
           <Card className="bg-light mt-3">
             <CardBody>
               <blockquote className="blockquote">
-                <p className="mb-0">I will not follow where the path may lead, but I will go where there is no path, and I will leave a trail.</p>
+                <p className="mb-0">
+                  I will not follow where the path may lead, but I will go where
+                  there is no path, and I will leave a trail.
+                </p>
                 <footer className="blockquote-footer">
-                  Muriel Strode, <cite title="Source Title">"Wind-Wafted Wild Flowers" - The Open Court, 1903</cite>
+                  Muriel Strode,{" "}
+                  <cite title="Source Title">
+                    "Wind-Wafted Wild Flowers" - The Open Court, 1903
+                  </cite>
                 </footer>
               </blockquote>
             </CardBody>
@@ -89,9 +107,7 @@ function RenderPartner({ partner }) {
       </React.Fragment>
     );
   } else {
-      return(
-        <div />
-      );
+    return <div />;
   }
 }
 
