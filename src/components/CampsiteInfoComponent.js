@@ -113,11 +113,9 @@ class CommentForm extends Component {
                   className="form-control"
                 />
               </div>
-              <div className="form-group">
-                <Button type="submit" color="primary">
-                  Submit
-                </Button>
-              </div>
+              <Button type="submit" color="primary">
+                Submit
+              </Button>
             </LocalForm>
           </ModalBody>
         </Modal>
@@ -129,8 +127,8 @@ class CommentForm extends Component {
 function RenderCampsite({ campsite }) {
   return (
     <div className="col-md-5 m-1">
-      <FadeTransform 
-        in 
+      <FadeTransform
+        in
         transformProps={{
           exitTransform: 'scale(0.5) translateY(50%)'
         }}>
